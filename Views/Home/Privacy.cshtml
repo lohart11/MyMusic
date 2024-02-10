@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Songwriting Tutor Calculator";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="~/NewFolder/icons8-music-16.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/site.js"></script>
+</head>
+<body>
+    <h1>Songwriting Tutor Calculator</h1>
+    <label for="hours">Enter number of hours:</label>
+    <input type="number" id="hours" min="1">
+    <br>
+    <label for="rate">Rate per hour:</label>
+    <input type="text" id="rate" value="50" readonly>
+    <br>
+    <button id="calculate">Calculate Total</button>
+    <br>
+    <label for="total">Total:</label>
+    <input type="text" id="total" readonly>
+    <br>
+    <a href="@Url.Action("Index", "Home")">Go back to Home</a>
+</body>
+<script src="~/js/site.js"></script>
+</html>
+
+
